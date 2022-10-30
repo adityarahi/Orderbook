@@ -61,3 +61,15 @@ def order_dlt(order):
                     break
         except:
             pass  
+
+
+for i  range(df.shape):
+    k=df[i]
+    if k.type='ADD':
+        order_ADDING(k)
+    else:
+        order_dlt(k)
+
+
+for i in range(len(database)):
+    print(database[i])
